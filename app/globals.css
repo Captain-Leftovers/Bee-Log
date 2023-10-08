@@ -12,9 +12,14 @@ body,
   box-sizing: border-box;
 }
 
-* {
+.rotateX {
+  transform: rotateX(0);
+}
+
+
+/* * {
   outline: 1px dashed rgb(255, 0, 0);
-};
+}; */
 
 /* *:hover {
 outline: 2px dashed rgb(255, 0, 0);

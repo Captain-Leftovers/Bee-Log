@@ -14,6 +14,23 @@ const config: Config = {
 				accent: '#FFD600',
 				background: '#F2F2F2',
 			},
+			animation: {
+				'fly-l': 'fly-l 0.5s infinite alternate',
+				'fly-r': 'fly-r 0.5s infinite alternate',
+			},
+		},
+		keyframes: {
+			'fly-l': {
+				'100%': {
+					transform: 'rotate(30deg) rotateX(15deg)',
+				},
+			},
+
+			'fly-r': {
+				'100%': {
+					transform: 'rotate(-30deg) rotateX(-15deg)',
+				},
+			},
 		},
 	},
 	plugins: [],
