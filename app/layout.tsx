@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Footer from '@/components/Footer'
+import ModalProvider from '@/providers/ModalProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({
 			<body
 				className={`${inter.className} flex flex-col min-h-screen bg-background text-primary`}
 			>
+				<ModalProvider />
 				<Navbar />
 				<main className="grow">{children}</main>
 				<Footer />
